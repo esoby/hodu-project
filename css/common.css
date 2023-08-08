@@ -1,0 +1,47 @@
+* {
+  font-family: Spoqa Han Sans Neo;
+  box-sizing: border-box;
+  letter-spacing: 0em;
+  flex-shrink: 0;
+  font-size: 16px;
+}
+
+/* reset */
+h1,
+h2,
+h3,
+h4,
+p,
+input,
+button,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+input {
+  border: none;
+}
+input:focus {
+  outline: none;
+}
+
+button {
+  border: none;
+  background: none;
+}
+ul,
+li {
+  list-style: none;
+}
+button:enabled {
+  cursor: pointer;
+}
+body {
+  margin: 0;
+}
