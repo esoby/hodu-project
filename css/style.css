@@ -207,11 +207,15 @@ main .cont {
   right: 40px;
   bottom: 184px;
 }
+.btn-top:hover svg path {
+  fill: #767676;
+}
 
 .subscribe {
   background-color: #263140;
   width: 66%;
-  height: 200px;
+  padding: 50px 58px;
+  /* height: 200px; */
   border-radius: 30px;
 
   position: absolute;
@@ -220,7 +224,6 @@ main .cont {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 58px;
 }
 
 .sub_txt {
@@ -251,14 +254,20 @@ main .cont {
 }
 
 .sub_email input {
-  width: 50%;
+  display: block;
+  min-width: 55%;
+  flex-basis: 10px;
+  margin-left: 10px;
+  /* width: 50%; */
   height: 20px;
+  padding: 10px 0;
 }
 .sub_email input::placeholder {
   color: #767676;
 }
 .btn-sub {
-  width: 140px;
+  flex-grow: 1;
+  /* width: 140px; */
   height: 50px;
   border-radius: 40px;
   background-color: #d97652;
@@ -266,3 +275,35 @@ main .cont {
   font-weight: 700;
   text-align: center;
 }
+
+@media (max-width: 1410px) {
+  .subscribe {
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px;
+  }
+  .sub_txt {
+    width: 60%;
+  }
+  .sub_email {
+    width: 65%;
+  }
+
+  .sub_txt * {
+    text-align: center;
+  }
+}
+@media (max-width: 1160px) {
+  .header .cont {
+    flex-direction: column;
+  }
+  .head_text {
+    align-items: center;
+    width: 90%;
+  }
+  .head_text > * {
+    text-align: center;
+  }
+}
+/* @media (max-width: 900px) {
+} */
